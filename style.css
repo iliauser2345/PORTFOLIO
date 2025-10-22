@@ -3,3 +3,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
 }
+.titling{
+    margin-bottom: 10px;
+    background-color: rgb(170, 89, 89);
+    border: 3px outset rgb(177,26,26)
+    
+}
+.aboutme {
+    margin-bottom: 10px;
+    background-color: rgb(198, 74, 74);
+    border: 3px outset rgb(177, 26, 26)
+    
+}
+/*#pictureofme{
+    float: right;
+    
+
+}
+#AMtext{
+    float: left;
+    margin-bottom: 10px;
+    background-color: rgb(172, 62, 62);
+    border: 3px outset rgb(177,26,26)
+  
+}*/
+.projects{
+    margin-bottom: 10px;
+    background-color: rgb(203, 95, 95);
+    border: 3px outset rgb(177,26,26)
+
+}
+.contact {
+    background-color: rgb(198, 74, 74);
+    border: 3px outset rgb(177,26,26)
+}
