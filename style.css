@@ -1,39 +1,89 @@
 body {
-    background-color: rgb(96, 57, 57);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+  background-color: rgb(96, 57, 57);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
 }
-.titling{
-    margin-bottom: 10px;
-    background-color: rgb(170, 89, 89);
-    border: 3px outset rgb(177,26,26)
-    
+
+.titling {
+  margin-bottom: 10px;
+  background-color: rgb(170, 89, 89);
+  border: 3px outset rgb(177,26,26);
+  padding: 12px;
 }
+
+.Navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  gap: 12px;
+}
+
 .aboutme {
-    margin-bottom: 10px;
-    background-color: rgb(198, 74, 74);
-    border: 3px outset rgb(177, 26, 26)
-    
+  margin-bottom: 10px;
+  background-color: rgb(198, 74, 74);
+  border: 3px outset rgb(177, 26, 26);
+  padding: 12px;
 }
-/*#pictureofme{
-    float: right;
-    
 
+/* container that holds text and image side-by-side */
+.aboutme-inner {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-#AMtext{
-    float: left;
-    margin-bottom: 10px;
-    background-color: rgb(172, 62, 62);
-    border: 3px outset rgb(177,26,26)
-  
-}*/
-.projects{
-    margin-bottom: 10px;
-    background-color: rgb(203, 95, 95);
-    border: 3px outset rgb(177,26,26)
 
+/* text column */
+.aboutme-text {
+  flex: 1 1 480px;
+  min-width: 260px;
 }
+
+/* image column */
+.aboutme-image {
+  flex: 0 0 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* make image responsive inside column */
+#pictureofme {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid rgba(0,0,0,0.2);
+}
+
+/* keeping paragraph width controlled */
+#AMtext {
+  margin: 8px 0;
+}
+
+/* projects and contact styles */
+.projects {
+  margin-bottom: 10px;
+  background-color: rgb(203, 95, 95);
+  border: 3px outset rgb(177,26,26);
+  padding: 12px;
+}
+
 .contact {
-    background-color: rgb(198, 74, 74);
-    border: 3px outset rgb(177,26,26)
+  background-color: rgb(198, 74, 74);
+  border: 3px outset rgb(177,26,26);
+  padding: 12px;
+}
+
+/*stack with image full width below text */
+@media (max-width: 720px) {
+  .aboutme-inner {
+    flex-direction: column;
+  }
+  .aboutme-image {
+    flex: 1 1 100%;
+  }
 }
