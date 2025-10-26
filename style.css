@@ -129,3 +129,29 @@ body {
         flex: 1 1 100%;
     }
 }
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: 14px;
+    background: rgb(170, 89, 89);
+    color: white;
+    border: 2px outset rgb(177,26,26);
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 1000;
+    }
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+#backToTop:focus {
+    outline: 3px solid rgba(255,255,255,0.4);
+    outline-offset: 2px;
+}

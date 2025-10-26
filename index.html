@@ -82,5 +82,29 @@
         <a href="https://www.instagram.com/michhalaki.ilyushik/" target="_blank">Mijn instagram</a>
         </section>
     </footer>
+    <button id="backToTop" aria-label="Back to top">↑ Top</button>
+    <script>
+    (function () {
+        var btn = document.getElementById('backToTop');
+        var showAfter = 50; // show button after this many pixels of scroll
+
+        function onScroll() {
+        if (window.pageYOffset > showAfter) {
+            btn.classList.add('show');
+        } else {
+            btn.classList.remove('show');
+        }
+        }
+
+        // Smooth scroll to top when clicked
+        btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Initial check and attach scroll listener
+        onScroll();
+        window.addEventListener('scroll', onScroll);
+    })();
+</script>
 </body>
 </html>
