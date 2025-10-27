@@ -11,21 +11,22 @@ main {
 
 
 body {
-    background-color: rgb(96, 57, 57);
+    background-color: #003153;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #f6d9c3;
 }
 
 .titling {
     text-align: center;
     margin-bottom: 10px;
-    background-color: rgb(170, 89, 89);
-    border: 3px outset rgb(177,26,26);
+    background-color:#0B0B45;
+    border: 3px outset rgb(0, 0, 0);
     padding: 12px;
     font-size: 32px;
+
 }
 
 .Navbar ul {
@@ -35,7 +36,7 @@ body {
     padding: 8px;
     display: flex;
     gap: 12px;
-    background-color:rgb(86, 10, 10);
+    background-color:#191970;
     margin-bottom: 12px;
     font-size: 20px;
     border: 3px outset rgb(0,0,0);
@@ -58,8 +59,8 @@ body {
 
 .aboutme {
     margin-bottom: 10px;
-    background-color: rgb(198, 74, 74);
-    border: 3px outset rgb(177, 26, 26);
+    background-color: #6495ED;
+    border: 3px outset rgb(0, 0, 0);
     padding: 12px;
     font-size: 20px;
   
@@ -105,8 +106,8 @@ body {
     box-shadow: 5px 5px 5px 5px rgb(255, 251, 0) ;
     text-align: center;
     margin-bottom: 10px;
-    background-color: rgb(203, 95, 95);
-    border: 3px outset rgb(177,26,26);
+    background-color: #6495ED;
+    border: 3px outset rgb(0, 0, 0);
     padding: 12px;
     font-size: 20px;
 }
@@ -125,15 +126,15 @@ body {
     padding: 8px;
     display: flex;
     gap: 40px;
-    background-color:rgb(214, 73, 30);
+    background-color:#191970;
     margin-bottom: 12px;
     font-size: 20px;
     border: 3px outset rgb(0,0,0);
 }
 .contact {
     text-align: center;
-    background-color: rgb(198, 74, 74);
-    border: 3px outset rgb(177,26,26);
+    background-color: #0B0B45;
+    border: 3px outset rgb(0, 0, 0);
     padding: 12px;
     font-size: 14px;
 }
@@ -163,7 +164,7 @@ body {
     display: inline-block;
     padding: 10px 12px;
     font-size: 14px;
-    background: rgb(170, 89, 89);
+    background: #0B0B45;
     color: white;
     border: 2px outset rgb(177,26,26);
     border-radius: 6px;
@@ -227,7 +228,7 @@ body {
 
 /* buttons */
 .contact-form button {
-  background: rgb(170, 89, 89);
+  background: #0B0B45;
   color: #fff;
   border: 2px outset rgb(177,26,26);
   padding: 10px 14px;

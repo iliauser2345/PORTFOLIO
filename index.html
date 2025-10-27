@@ -25,16 +25,16 @@
     <section class="aboutme">
       <div class="aboutme-inner">
         <div class="aboutme-text">
-            <div class="interests">
-                <h2>Interessen</h2>
-                <ul>
-                    <li>Programeren</li>
-                    <li>Gamen</li>
-                    <li>Modellenbouw</li>
-                </ul>
-            </div>
+          <div class="interests">
+            <h2>Interessen</h2>
+            <ul>
+              <li>Programeren</li>
+              <li>Gamen</li>
+              <li>Modellenbouw</li>
+            </ul>
+          </div>
 
-          <a href="https://github.com/iliauser2345" target="_blank">Mijn GitHub</a>
+          
           <table id="skills">
             <tr>
               <th>Vaardigheid</th>
@@ -52,12 +52,12 @@
               <td>Leiden</td>
               <td>S</td>
             </tr>
-          </table>
+            </table>
             <div class="aboutmepar">
-                <h2>Over Mij</h2>
-                <p id="AMtext">
-                    Ik ben Ilia en oorspronkelijk ben ik Oekraïns. Momenteel zit ik op Alfa College en ik doe Software Development als een opleiding. Programeren zelf is al een tijdje mijn hobby geweest dus ik ben gerig voor nieuwe uitdagingen in ICT gebied. Zelf ben ik meer een Backend developer maar ik ken wel de basics van frontend.
-                </p>
+              <h2>Over Mij</h2>
+              <p id="AMtext">
+                Ik ben Ilia en oorspronkelijk ben ik Oekraïns. Momenteel zit ik op Alfa College en ik doe Software Development als een opleiding. Programeren zelf is al een tijdje mijn hobby geweest dus ik ben gerig voor nieuwe uitdagingen in ICT gebied. Zelf ben ik meer een Backend developer maar ik ken wel de basics van frontend.
+              </p>
             </div>
         </div>
 
@@ -70,6 +70,7 @@
     <section class="projects">
       <h3>Projecten</h3>
       <p>Dat zijn paar van mijn projecten</p>
+      <a href="https://github.com/iliauser2345" target="_blank">Mijn GitHub</a>
       <ul>
         <li><a href="./INDELING_ver1.2.py" download="Project1" target="_blank">Sort machine</a></li>
         <li><a href="./abcx2.cpp" download="Project2" target="_blank">Calculator x^2</a></li>
@@ -77,10 +78,10 @@
       </ul>
     </section>
 
-    </main>
+  </main>
 
-    <footer>
-        <section class="contact">
+  <footer>
+      <section class="contact">
         <h5>Contact</h5>
         <h6>Door Ilia Mikhalaki</h6>
         <a href="https://www.instagram.com/michhalaki.ilyushik/" target="_blank">Mijn instagram</a>
@@ -113,58 +114,58 @@
           <div id="formNotice" class="form-notice" aria-live="polite"></div>
         </form>
 
-        </section>
-    </footer>
+      </section>
+  </footer>
 
-    <button id="backToTop" aria-label="Back to top">↑ Top</button>
+  <button id="backToTop" aria-label="Back to top">↑ Top</button>
 
-    <script>
-    (function () {
-        var btn = document.getElementById('backToTop');
-        var showAfter = 50; // show button after this many pixels of scroll
+  <script>
+  (function () {
+      var btn = document.getElementById('backToTop');
+      var showAfter = 50; // show button after this many pixels of scroll
 
-        function onScroll() {
-        if (window.pageYOffset > showAfter) {
-            btn.classList.add('show');
-        } else {
-            btn.classList.remove('show');
-        }
-        }
+      function onScroll() {
+      if (window.pageYOffset > showAfter) {
+          btn.classList.add('show');
+      } else {
+          btn.classList.remove('show');
+      }
+      }
 
-        // Smooth scroll to top when clicked
-        btn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+      // Smooth scroll to top when clicked
+      btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
 
-        // Initial check and attach scroll listener
-        onScroll();
-        window.addEventListener('scroll', onScroll);
-    })();
+      // Initial check and attach scroll listener
+      onScroll();
+      window.addEventListener('scroll', onScroll);
+  })();
 
    
-    (function () {
-      var form = document.getElementById('contactForm');
-      var notice = document.getElementById('formNotice');
-      if (!form) return;
+  (function () {
+    var form = document.getElementById('contactForm');
+    var notice = document.getElementById('formNotice');
+    if (!form) return;
 
-      form.addEventListener('submit', function (e) {
-        e.preventDefault(); // prevent actual post in demo
-        // simple validation feedback
-        var name = form.name.value.trim();
-        var email = form.email.value.trim();
-        var message = form.message.value.trim();
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent actual post in demo
+      // simple validation feedback
+      var name = form.name.value.trim();
+      var email = form.email.value.trim();
+      var message = form.message.value.trim();
 
-        if (!name || !email || !message) {
-          notice.textContent = 'Vul alstublieft naam, e-mail en bericht in.';
-          notice.style.color = '#fffb00';
-          return;
-        }
+      if (!name || !email || !message) {
+        notice.textContent = 'Vul alstublieft naam, e-mail en bericht in.';
+        notice.style.color = '#fffb00';
+        return;
+      }
 
-        notice.textContent = 'Bedankt! Je bericht is klaar om verzonden te worden (demo).';
-        notice.style.color = '#ffffff';
-        form.reset();
-      });
-    })();
-    </script>
+      notice.textContent = 'Bedankt! Je bericht is klaar om verzonden te worden (demo).';
+      notice.style.color = '#ffffff';
+      form.reset();
+    });
+  })();
+  </script>
 </body>
 </html>
